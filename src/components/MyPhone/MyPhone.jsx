@@ -17,7 +17,7 @@ const MyPhone = () => {
 
     useEffect(()=> {
         dispatch(fetchContacts());
-    });
+    }, [dispatch]);
 
     const isDublicate = ({ name }) => {
         const normalizedName = name.toLowerCase();
